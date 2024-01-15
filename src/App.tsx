@@ -9,16 +9,16 @@ function App() {
 
   return (
     <div style={{ textAlign: "center", marginTop: 16, marginBottom: 16 }}>
-      <p>{count}</p>
-      <button onClick={handleAdd} style={{ marginRight: 4 }}>
-        ＋
-      </button>
+      <h2>{count}</h2>
       <button
         onClick={handleSubtract}
         disabled={count <= 0}
-        style={{ marginLeft: 4 }}
+        style={{ marginRight: 4 }}
       >
         ー
+      </button>
+      <button onClick={handleAdd} style={{ marginLeft: 4 }}>
+        ＋
       </button>
       <br />
       <button onClick={handleClear} disabled={count === 0}>
